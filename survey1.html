@@ -16,8 +16,9 @@
 <form action="./process.php" method="post">
 Please type a command which would cause this to happen:<br /><br />
 <input type="text" name="userCommand" size="100"><br /> <br />
-<input type="text" name="originalCommand" value="turnLeft" readonly="true"><br /><br />
-<input type="text" name="originalQuantity" value="90" readonly="true"><br /><br />
+<input type="hidden" name="originalCommand" value="turnLeft" readonly="true">
+<input type="hidden" name="originalQuantity" value="90" readonly="true">
+<input type="hidden" name="page" value="1" readonly="true">
 <input type="submit" value="Submit">
 </form>
 
