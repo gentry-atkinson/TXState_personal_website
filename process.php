@@ -26,7 +26,7 @@
 
 		if (is_writable("logoCommands.json")){		
 			$outFile = fopen("logoCommands.json", "c");
-                        fseek($outFile, -3, SEEK_END);
+                        fseek($outFile, -2, SEEK_END);
 			fwrite($outFile, $outString);
 			fclose($outFile);
 			//echo "This page is ";
@@ -43,8 +43,17 @@
                         case 2:
 				header("Location: https://userweb.cs.txstate.edu/~gma23/survey3.html");
 				break;
+                        case 3:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey4.html");
+				break;
+                        case 4:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey5.html");
+				break;
+                        case 5:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey6.html");
+				break;
 			default:
-				echo "Bad page number.";
+				header("Location: https://userweb.cs.txstate.edu/~gma23/thanks.html");
 		}
 	}
 	catch (Exception $e) {
