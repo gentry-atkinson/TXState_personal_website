@@ -1,6 +1,6 @@
 <?php
    	
-	$outString = "{\"userCommand\" : \"";
+	$outString = ",\n{\"userCommand\" : \"";
 	$switchVar = 0;
 
 	try
@@ -22,10 +22,11 @@
 		$outString .= date("Y/m/d");
                 $outString .= "\", \"time\" : \"";
 		$outString .= date("H:i:s");
-		$outString .= "\"}\n";
+		$outString .= "\"}\n]";
 
 		if (is_writable("logoCommands.json")){		
-			$outFile = fopen("logoCommands.json", "a");
+			$outFile = fopen("logoCommands.json", "c");
+                        fseek($outFile, -3, SEEK_END);
 			fwrite($outFile, $outString);
 			fclose($outFile);
 			//echo "This page is ";
