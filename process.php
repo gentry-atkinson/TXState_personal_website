@@ -7,11 +7,13 @@
 	{
 		//Form data passed in with post
 		$formdata = array(
-			'userCommand'=> $_POST['userCommand'],
+			'userCommand'=> addslashes($_POST['userCommand']),
 			'originalCommand'=> $_POST['originalCommand'],
 			'originalQuantity'=> $_POST['originalQuantity']
 		);
 		$switchVar = $_POST['page'];
+                
+                //str_replace("\"", "'", $formdata['userCommand']);
 		
 		$outString .= $formdata['userCommand'];
 		$outString .= "\", \"originalCommand\" : \"";
