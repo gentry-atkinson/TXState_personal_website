@@ -52,6 +52,48 @@
                         case 5:
 				header("Location: https://userweb.cs.txstate.edu/~gma23/survey6.html");
 				break;
+                        case 6:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey7.html");
+				break;
+                        case 7:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey8.html");
+				break;
+                        case 8:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey9.html");
+				break;
+                        case 9:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey10.html");
+				break;
+                        case 10:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey11.html");
+				break;
+                        case 11:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey12.html");
+				break;
+                        case 12:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey13.html");
+				break;
+                        case 13:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey14.html");
+				break;
+                        case 14:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey15.html");
+				break;
+                        case 15:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey16.html");
+				break;
+                        case 16:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey17.html");
+				break;
+                        case 17:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey18.html");
+				break;
+                        case 18:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey19.html");
+				break;
+                        case 19:
+				header("Location: https://userweb.cs.txstate.edu/~gma23/survey20.html");
+				break;
 			default:
 				header("Location: https://userweb.cs.txstate.edu/~gma23/thanks.html");
 		}
