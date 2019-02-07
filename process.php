@@ -13,7 +13,7 @@
 		);
 		$switchVar = $_POST['page'];
                 
-                //str_replace("\"", "'", $formdata['userCommand']);
+                $formdata["userCommand"] = trim($formdata["userCommand"]);
 		
 		$outString .= $formdata['userCommand'];
 		$outString .= "\", \"originalCommand\" : \"";
