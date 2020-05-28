@@ -6,33 +6,30 @@
 </head>
 <body style="background-color: #E9E9EF">
 
-<h4>Directory of Texas UHF/VHF Repeaters </h4>
+<header>
+  <h1>Directory of Texas UHF/VHF Repeaters </h1>
+</header>
 
-<img src="International_amateur_radio_symbol.png" alt="Yellow Diamond amateur radio symbol" width="100" />
+<main>
+  <img src="International_amateur_radio_symbol.png" alt="Yellow Diamond amateur radio symbol" width="100" />
 
-<p>
-This simple directory is intended to help users find amateur repeaters in the state of Texas. To use this directory, enter a location or string of locations seperated by commas. You can also enter information such mode, band, and squelch in the search box.
-</p>
+  <p>
+  This simple directory is intended to help users find amateur repeaters in the state of Texas. To use this directory, enter a location or string of locations seperated by commas. You can also enter information such mode, band, and squelch in the search box.
+  </p>
 
 
-<form action="./search_stations.php" method="get">
-    <table>
-        <tr>
-            <td><label>Location: <input type="text" name="location" size="80"></label></td>
-        </tr>
-        <tr>
-            <td><label>Station Type:<input type="text" name="station_type" size="80"></label></td>
-        </tr>
-        <tr>
-            <td><input type="submit" value="Search"></td>
-        </tr>
+  <form action="./search_stations.php" method="get">
+    <label>Location: <input type="text" name="location" size="80"></label><br />
+    <label>Station Type:<input type="text" name="station_type" size="80"></label><br />
+    <input type="submit" value="Search"><br />
+  </form>
+</main>
 
-    </table>
-</form>
-
-<center>
-<img src="wave.png" alt="Two antenna schematic symbols connected by a sine wave" width="600" />
-</center>
+<footer>
+  <center>
+    <img src="wave.png" alt="Two antenna schematic symbols connected by a sine wave" width="600" />
+  </center>
+</footer>
 
 </body>
 </html>
